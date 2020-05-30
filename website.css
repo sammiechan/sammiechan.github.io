@@ -17,7 +17,7 @@ body .background-shader {
     height: 30vh;
     min-height: 250px;
     max-height: 400px;
-    background-color: #1565C0;
+    background-color: #549eed;
 }
 
 body .content {
@@ -105,8 +105,6 @@ body .content {
     min-width: 290.563px;
     max-height: 378px;
     max-width: 378px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
 }
 
 @media only screen and (min-width: 375px) and (max-width: 908px) {
@@ -167,7 +165,7 @@ body .content {
     -ms-flex: 100%;
     flex: 100%;
     height: 50px;
-    background-color: #1565C0;
+    background-color: #549eed;
     text-align: center;
 }
 
@@ -236,7 +234,8 @@ body .content {
 }
 
 .skills-content .skills-category {
-    padding: 0 5px 0 0;
+    padding: 0 15px 0 15px;
+    flex-grow: 1;
 }
 
 .skills-content .skills-category .skills-category-label {
