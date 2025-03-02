@@ -1,217 +1,544 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sammie Chan | Software Developer</title>
-        <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFeSURBVFhH7ZM9SwNBEIbvV+Yf6C+wUCuxtVMJ8aPRs0hlBC0tYoicYCJ4sTCgBxaHQoJtTMwx3rvZIJJBk905Q9h74IVjZ2EfZua8hWR165DmEf383+Dyf5ML2pIL2uKWYPLZp8egSFW/oNK+KVEy7OuqGaKC7VTu7mKZPuJ9leb5kpK0QVQQXevFe0TvvkovLtHVSUFXzRAVhMw0gtcPERsOUUGMGGOFGDIacSpsgaggfhLsHLqGQC4ZDnTVDFHBLBAVvH/q0vZpSGsHgcpOJaTwuaur33D7h3CICZ7VI9o8blC50aHLl4EKvnGGmikigujcxtGtkqq90Y/gDJKtaLKT0yAiiLH6weuE3DjlZod2Ky19ezZEBLFvK8X6r1lP74zh9g/hEBHMklzQFhFBbp9MwuFGB7PEDUFun0zC4UYHs8QNQW6fTMLhRgezJBe0JRe0ZWbBeUQ/v0h43hfZN6obnpDAoAAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" href="website.css">
+<html lang="en">
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sammie Chan - Software Developer with 10+ years of experience in C#, JavaScript, TypeScript and more.">
+    <meta name="keywords" content="software developer, C#, JavaScript, TypeScript, ASP.NET, full-stack developer">
+    <meta name="author" content="Sammie Chan">
+    <meta name="robots" content="index, follow">
+    <title>Sammie Chan | Software Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="Sammie Chan | Software Developer">
+    <meta property="og:description" content="Software Developer with 10+ years of experience in C#, JavaScript, TypeScript and more.">
+    <meta property="og:image" content="https://sammiechan.github.io/profile-image.jpg">
+    <meta property="og:url" content="https://sammiechan.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Preconnect to CDNs for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://ajax.googleapis.com" crossorigin>
+    
+    <!-- Non-critical CSS with preload -->
+     <link rel="stylesheet" type="text/css" href="styles.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css">
+        
+    <!-- Scripts with optimized loading - Restored jQuery 1.11.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"
+        integrity="sha512-FcXc9c211aHVJEHxoj2fNFeT8+wUESf/4mUDIR7c31ccLF3Y6m+n+Wsoq4dp2sCnEEDVmjhuXX6TfYNJO6AG6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+</head>
 
-    <body>
-        <div class="background-shader"></div>
-        <div class="content">
-            <section class="header">
-                <div class="header-left">
-                    <span>Sammie Chan</span>
-                </div>
-                <div class="header-right">
-                    <nav>
-                        <a href="#skills">Skills</a>
-                        <a href="#experience">Experience</a>
-                        <a href="#education">Education</a>
-                        <a href="#certifications">Certifications</a>
+<body class="background-image">
+    <div id="pagepiling">
+        <header class="sticky-header">
+            <div class="main-nav">
+                <h1 class="absolute-left"><a href="/">Sammie Chan</a></h1>
+                <div class="container header-container">
+                    <nav class="center-nav">
+                        <ul class="single-bar">
+                            <li><a href="#skills">SKILLS</a></li>
+                            <li><a href="#experience">EXPERIENCE</a></li>
+                            <li><a href="#education">EDUCATION</a></li>
+<!-- Removed Contact link -->
+                        </ul>
                     </nav>
                 </div>
-            </section>
-            <section class="profile-card">
-                <img class="profile-img" src="./profile.jpg">
-                <div class="profile-info">
-                    <span class="full-name">Sammie Chan</span>
-                    <br />
-                    <span class="profession">Software Developer</span>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sammie-chan/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+<a href="mailto:sammie@sammiesmchan.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/sammiechan" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#" data-menuanchor="" class="active"><img src="./assets/profile-transparent.png" /></a></li>
+                    <li><a href="#skills" data-menuanchor="skills"><i class="fas fa-code"></i><span>Skills</span></a>
+                    </li>
+                    <li><a href="#experience" data-menuanchor="experience"><i
+                                class="fas fa-briefcase"></i><span>Work</span></a></li>
+                    <li><a href="#education" data-menuanchor="education"><i
+                                class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hero" class="section pp-scrollable">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-avatar-ring">
+                        <div class="hero-avatar"></div>
+                    </div>
+                    <div class="hero-text">
+                        <p>Software Developer</p>
+                        <h1><span class="highlight">Sammie Chan</span></h1>
+                        <ul class="hero-points">
+                            <li>10+ years technical expertise</li>
+                            <li>High-quality software solutions</li>
+                            <li>Adaptable across environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <p class="description">IT Professional with over 10+ years of technical experience working in multiple companies. The skills I offer allow the design and development of high-quality software solutions. My strengths include being a quick learner and flexibility in various environments.</p>
-                </div>
-                <div class="profile-links">
-                    <a href="https://www.linkedin.com/in/sammie-chan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:sammie@sammiesmchan.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </section>
-            <section id="skills" class="section">
-                <div class="section-title">
-                    Skills
-                </div>
-                <div class="section-content">
-                    <div class="skills-content">
-                        <div class="skills-category">
-                            <div class="skills-category-label">Languages</div>
-                            <ul>
-                                <li>C#</li>
-                                <li>Javascript/Typescript</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>HTML</li>
-                                <li>CSS/Sass</li>
-                                <li>SQL</li>
-                            </ul>
+        <div class="section pp-scrollable">
+            <div class="container">
+                <div class="skills-container">
+                    <div class="experience-counter">
+                        <span class="years">10+</span>
+                        <span class="years-label">Years<br>Experience</span>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Programming Languages</h3>
+                        <div class="programming-languages">
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                    class="lang-logo" alt="C#">
+                                <span class="lang-name">C#</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    class="lang-logo" alt="JavaScript">
+                                <span class="lang-name">JavaScript</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                    class="lang-logo" alt="TypeScript">
+                                <span class="lang-name">TypeScript</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                    class="lang-logo" alt="Java">
+                                <span class="lang-name">Java</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    class="lang-logo" alt="Python">
+                                <span class="lang-name">Python</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    class="lang-logo" alt="HTML5">
+                                <span class="lang-name">HTML</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    class="lang-logo" alt="CSS3">
+                                <span class="lang-name">CSS & Sass</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                                    class="lang-logo" alt="SQL">
+                                <span class="lang-name">SQL</span>
+                            </div>
                         </div>
-                        <div class="skills-category">
-                            <div class="skills-category-label">Frameworks</div>
-                            <ul>
-                                <li>ASP.NET (4.5+)</li>
-                                <li>ASP.NET Core</li>
-                                <li>AngularJS/Angular (2+)</li>
-                                <li>React.js</li>
-                            </ul>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="programming-languages">
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                                    class="lang-logo" alt="ASP.NET Core">
+                                <span class="lang-name">ASP.NET Core</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+                                    class="lang-logo" alt="ASP.NET">
+                                <span class="lang-name">ASP.NET</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                                    class="lang-logo" alt="Angular">
+                                <span class="lang-name">Angular</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    class="lang-logo" alt="React">
+                                <span class="lang-name">React</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                    class="lang-logo" alt="Bootstrap">
+                                <span class="lang-name">Bootstrap</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                                    class="lang-logo" alt="jQuery">
+                                <span class="lang-name">jQuery</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                    class="lang-logo" alt="Node.js">
+                                <span class="lang-name">Node.js</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                                    class="lang-logo" alt="Azure SDK">
+                                <span class="lang-name">Azure SDK</span>
+                            </div>
                         </div>
-                        <div class="skills-category">
-                            <div class="skills-category-label">Tools</div>
-                            <ul>
-                                <li>Productivity (Atlassian, Azure DevOps)</li>
-                                <li>Source Control (Git/SVN)</li>
-                                <li>DevOps (Pipelines, Kubernetes)</li>
-                                <li>Architectural (Service Bus, New Relic, etc.)</li>
-                                <li>API Tools (Postman, Insomnia)</li>
-                            </ul>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="programming-languages">
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    class="lang-logo" alt="Git">
+                                <span class="lang-name">Git</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                                    class="lang-logo" alt="Azure DevOps">
+                                <span class="lang-name">Azure DevOps</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                    class="lang-logo" alt="Docker">
+                                <span class="lang-name">Docker</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                                    class="lang-logo" alt="Kubernetes">
+                                <span class="lang-name">Kubernetes</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+                                    class="lang-logo" alt="Jira">
+                                <span class="lang-name">Jira</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                    class="lang-logo" alt="VS Code">
+                                <span class="lang-name">VS Code</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                                    class="lang-logo" alt="Visual Studio">
+                                <span class="lang-name">Visual Studio</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+                                    class="lang-logo" alt="NPM">
+                                <span class="lang-name">NPM</span>
+                            </div>
                         </div>
-                        <div class="skills-category">
-                            <div class="skills-category-label">Misc</div>
-                            <ul>
-                                <li>Object oriented design</li>
-                                <li>Functional programming</li>
-                                <li>Architecture (Event-driven, Microservice)</li>
-                                <li>AWS & Azure</li>                                
-                                <li>Android and iOS</li>
-                                <li>Debugging and Problem Solving</li>
-                            </ul>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Additional Expertise</h3>
+                        <div class="programming-languages">
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                                    class="lang-logo" alt="AWS">
+                                <span class="lang-name">AWS</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                                    class="lang-logo" alt="Azure">
+                                <span class="lang-name">Azure</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                                    class="lang-logo" alt="SQL Server">
+                                <span class="lang-name">SQL Server</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+                                    class="lang-logo" alt="Android">
+                                <span class="lang-name">Android</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+                                    class="lang-logo apple-logo" alt="iOS">
+                                <span class="lang-name">iOS</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+                                    class="lang-logo" alt="GraphQL">
+                                <span class="lang-name">GraphQL</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                                    class="lang-logo" alt="Redis">
+                                <span class="lang-name">Redis</span>
+                            </div>
+                            <div class="lang-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                    class="lang-logo" alt="MongoDB">
+                                <span class="lang-name">MongoDB</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="experience" class="section">
-                <div class="section-title">
-                    Experience
-                </div>
-                <div class="section-content">
-                    <div class="jobs">
-                        <div class="job">
-                            <div class="company-name">iQmetrix</div>
-                            <div class="role-time">Mar 2021 - present</div>
-                            <div class="role-title">Staff Developer</div>
-                            <div class="description">
+            </div>
+        </div>
+
+        <div class="section pp-scrollable">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-line-column">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-column">
+                            <div class="timeline-date">
+                                <span>Mar 2021 - Present</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Staff Developer</h3>
+                                <h4>iQmetrix</h4>
                                 <ul>
-                                    <li>Provide technical leadership to team members including architectural design, software code reviews and backlog item management.</li>
-                                    <li>Architected new authentication system allowing OIDC integration with our large strategic clients while ensuring back compatibility is maintained.</li>
-                                    <li>Leading the modernization of the team’s software delivery platform by spearheading new processes and technical transition to an automated delivery & integration pipeline.</li>
+                                    <li>Provide technical leadership to team members including architectural design,
+                                        software code reviews and backlog item management.</li>
+                                    <li>Architected new authentication system allowing OIDC integration with our large
+                                        strategic clients while ensuring back compatibility is maintained.</li>
+                                    <li>Leading the modernization of the team's software delivery platform by
+                                        spearheading new processes and technical transition to an automated delivery &
+                                        integration pipeline.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="job">
-                            <div class="company-name">iQmetrix</div>
-                            <div class="role-time">Jan 2019 - Mar 2021</div>
-                            <div class="role-title">Software Developer</div>
-                            <div class="description">
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-line-column">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-column">
+                            <div class="timeline-date">
+                                <span>Jan 2019 - Mar 2021</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Software Developer</h3>
+                                <h4>iQmetrix</h4>
                                 <ul>
                                     <li>Lead solutions developer tasked to automate client billing services.</li>
-                                    <li>Modernize and maintain banking integrations handling payments totaling more than $40 million annually, client reconciliation reporting and billing data aggregation services.</li>
-                                    <li>Improve and support shared critical infrastructure including authentication, customer relationship management, and entity information services</li>
+                                    <li>Modernize and maintain banking integrations handling payments totaling more than
+                                        $40 million annually, client reconciliation reporting and billing data
+                                        aggregation services.</li>
+                                    <li>Improve and support shared critical infrastructure including authentication,
+                                        customer relationship management, and entity information services</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="job">
-                            <div class="company-name">Paragon Testing Enterprises</div>
-                            <div class="role-time">Oct 2016 - Jan 2019</div>
-                            <div class="role-title">Software Developer</div>
-                            <div class="description">
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-line-column">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-column">
+                            <div class="timeline-date">
+                                <span>Oct 2016 - Jan 2019</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Software Developer</h3>
+                                <h4>Paragon Testing Enterprises</h4>
                                 <ul>
-                                    <li>Lead development of a custom cloud-based global content delivery network (CDN) allowing high service availability and reliability to testing centers across the globe including Canada, United States, Asia and the Middle-East.</li>
-                                    <li>Developed services part of a unified English testing platform including rating, instructional product and ecommerce systems</li>
-                                    <li>Maintained a high SLA via fast resolution of production issues across all services.</li>
-                                    <li>Improved team cohesion via mentorship to 19+ interns and junior staff members</li>
+                                    <li>Lead development of a custom cloud-based global content delivery network (CDN)
+                                        allowing high service availability and reliability to testing centers across the
+                                        globe including Canada, United States, Asia and the Middle-East.</li>
+                                    <li>Developed services part of a unified English testing platform including rating,
+                                        instructional product and ecommerce systems</li>
+                                    <li>Maintained a high SLA via fast resolution of production issues across all
+                                        services.</li>
+                                    <li>Improved team cohesion via mentorship to 19+ interns and junior staff members
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="job">
-                            <div class="company-name">Trakz Development</div>
-                            <div class="role-time">May 2016 - Dec 2018</div>
-                            <div class="role-title">Business Operations Consultant (Contract)</div>
-                            <div class="description">
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-line-column">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-column">
+                            <div class="timeline-date">
+                                <span>May 2016 - Dec 2018</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Business Operations Consultant</h3>
+                                <h4>Trakz Development (Contract)</h4>
                                 <ul>
-                                    <li>Design and implement process development and strategic plans in order to achieve business goals.</li>
+                                    <li>Design and implement process development and strategic plans in order to achieve
+                                        business goals.</li>
                                     <li>Identify and resolve business risks/issues in a timely manner.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="job">
-                            <div class="company-name">Paragon Testing Enterprises</div>
-                            <div class="role-time">May 2015 - Sep 2016</div>
-                            <div class="role-title">Junior Software Developer</div>
-                            <div class="description">
-                                <ul>
-                                    <li>Designed and created software solutions for the companies e-learning platform including both web and mobile applications.</li>
-                                    <li>Provided technical support of in-house applications during and outside normal hours of operation.</li>
-                                    <li>Identified and improved areas in both software development and IT operations allowing more streamlined procedures.</li>
-                                </ul>
-                            </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-line-column">
+                            <div class="timeline-dot"></div>
                         </div>
-                        <div class="job">
-                            <div class="company-name">Trakz Development</div>
-                            <div class="role-time">Aug 2015 - May 2016</div>
-                            <div class="role-title">Business Development Operations Lead (Contract)</div>
-                            <div class="description">
-                                <ul>
-                                    <li>Develop and apply structure across team members, processes and tools, to various problems in different areas of our business.</li>
-                                </ul>
+                        <div class="timeline-content-column">
+                            <div class="timeline-date">
+                                <span>May 2015 - Sep 2016</span>
                             </div>
-                        </div>
-                        <div class="job">
-                            <div class="company-name">Paragon Testing Enterprises</div>
-                            <div class="role-time">Jan 2014 - May 2015</div>
-                            <div class="role-title">Account Service Representative</div>
-                            <div class="description">
+                            <div class="timeline-content">
+                                <h3>Junior Software Developer</h3>
+                                <h4>Paragon Testing Enterprises</h4>
                                 <ul>
-                                    <li>Coordinated accounts of 10+ Test Centres simultaneously including training and technical, operational and administrative support to coordinators at each account.</li>
+                                    <li>Designed and created software solutions for the companies e-learning platform
+                                        including both web and mobile applications.</li>
+                                    <li>Provided technical support of in-house applications during and outside normal
+                                        hours of operation.</li>
+                                    <li>Identified and improved areas in both software development and IT operations
+                                        allowing more streamlined procedures.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="education" class="section">
-                <div class="section-title">
-                    Education
-                </div>
-                <div class="section-content">
-                    <div class="schools">
-                        <div class="school">
-                            <div class="school-name">University of British Columbia</div>
-                            <div class="school-time">Sep 2009 - May 2013</div>
-                            <div class="school-degree">Bachelor of Science, Combined Major in Computer Science and Biology</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="certifications" class="section">
-                <div class="section-title">
-                    Certifications
-                </div>
-                <div class="section-content">
-                    <div class="certifications">
-                        <div class="certification">
-                            <div class="certification-name">Microsoft Certified Professional</div>
-                            <div class="certification-time">Sep 2016 - Present</div>
-                            <div class="certification-title">Programming in HTML5 with JavaScript and CSS3</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
-    </body>
+
+        <div class="section pp-scrollable">
+            <div class="container">
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="education-container">
+                    <div class="education-card">
+                        <div class="education-header">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-title">
+                                <h3>University of British Columbia</h3>
+                                <span class="education-period">Sep 2009 - May 2013</span>
+                            </div>
+                        </div>
+                        <div class="education-details">
+                            <p class="education-degree">Bachelor of Science, Combined Major in Computer Science and
+                                Biology</p>
+                            <p class="education-description">
+                                Completed a rigorous interdisciplinary program combining computer science fundamentals
+                                with biological sciences.
+                                Developed strong analytical skills through coursework in algorithms, data structures,
+                                bioinformatics, and computational biology.
+                            </p>
+                        </div>
+                        <div class="education-decoration">
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="certification-header">
+                            <div class="certification-icon">
+                                <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg"
+                                    alt="Microsoft Certification Badge">
+                            </div>
+                            <div class="certification-title">
+                                <h3>Microsoft Certified Professional</h3>
+                                <span class="certification-period">Sep 2016 - Present</span>
+                            </div>
+                        </div>
+
+                        <div class="certification-details">
+                            <p class="certification-title-text">Programming in HTML5 with JavaScript and CSS3</p>
+
+                            <p class="certification-description">
+                                This certification validates expertise in implementing and manipulating document
+                                structures and objects,
+                                implementing program flow, accessing and securing data, and using CSS3 in applications.
+                            </p>
+
+                            <div class="certification-skills">
+                                <span class="certification-skill">HTML5</span>
+                                <span class="certification-skill">JavaScript</span>
+                                <span class="certification-skill">CSS3</span>
+                                <span class="certification-skill">Web Applications</span>
+                            </div>
+
+                            <div class="certification-link">
+                                <a href="https://learn.microsoft.com/en-us/certifications/" target="_blank">
+                                    View certification details <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="certification-decoration">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#pagepiling').pagepiling({
+            menu: null,
+            direction: 'vertical',
+            verticalCentered: true,
+            sectionsColor: [],
+            anchors: ['', 'skills', 'experience', 'education'], // Removed 'contact'
+            scrollingSpeed: 700,
+            easing: 'swing',
+            loopBottom: false,
+            loopTop: false,
+            css3: true,
+            navigation: false,
+            normalScrollElements: null,
+            normalScrollElementTouchThreshold: 5,
+            touchSensitivity: 5,
+            keyboardScrolling: true,
+            sectionSelector: '.section',
+            animateAnchor: false,
+
+            //events
+            onLeave: function (index, nextIndex, direction) {
+                // Update mobile navigation active state
+                $('.mobile-nav a').removeClass('active');
+                var anchor = $('.section').eq(nextIndex - 1).attr('data-anchor') || '';
+                $('.mobile-nav a[data-menuanchor="' + anchor + '"]').addClass('active');
+
+                // If we're going to the first section (home), highlight home icon
+                if (nextIndex === 1) {
+                    $('.mobile-nav a[data-menuanchor=""]').addClass('active');
+                }
+            },
+            afterLoad: function (anchorLink, index) { },
+            afterRender: function () { },
+        });
+
+        // Handle mobile navigation clicks
+        $('.mobile-nav a').on('click', function (e) {
+            var anchor = $(this).attr('data-menuanchor');
+            if (anchor) {
+                $.fn.pagepiling.moveTo(anchor);
+            } else {
+                $.fn.pagepiling.moveTo(1);
+            }
+
+            // Update active state
+            $('.mobile-nav a').removeClass('active');
+            $(this).addClass('active');
+
+            e.preventDefault();
+        });
+    });
+</script>
 
 </html>
